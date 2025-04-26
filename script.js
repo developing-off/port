@@ -10,10 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     animateProgressBars();
 
-  
-   
-   
-    
     const skillCards = document.querySelectorAll('.skill-card');
     
     skillCards.forEach(card => {
@@ -33,4 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.toggle('active');
         this.classList.toggle('toggle');
     });
+
+    
 });
+
+function montrerDetails(id) {
+    var truc = document.getElementById(id);
+    if (truc.style.display == "none") {
+      truc.style.display = "block";
+    } else {
+      truc.style.display = "none";
+    }
+  }
