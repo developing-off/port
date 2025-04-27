@@ -1,15 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const progressBars = document.querySelectorAll('.progress-bar');
-    
-    function animateProgressBars() {
-        progressBars.forEach(bar => {
-            const level = bar.getAttribute('data-level');
-            bar.style.width = level + '%';
-        });
-    }
-    
-    animateProgressBars();
-
     const skillCards = document.querySelectorAll('.skill-card');
     
     skillCards.forEach(card => {
@@ -29,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.toggle('active');
         this.classList.toggle('toggle');
     });
-
-    
 });
 
 function montrerDetails(id) {
